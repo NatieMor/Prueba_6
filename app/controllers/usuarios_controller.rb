@@ -8,11 +8,13 @@ class UsuariosController < ApplicationController
 
   # GET /usuarios/1 or /usuarios/1.json
   def show
+    @postulación = Trabajo.id
   end
 
   # GET /usuarios/new
   def new
     @usuario = Usuario.new
+    @trabajos = Trabajo.all
   end
 
   # GET /usuarios/1/edit

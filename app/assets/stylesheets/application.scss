@@ -1,0 +1,230 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+:root {
+    --body-font: "Poppins", sans-serif;
+    --heading-font: "Cinzel", sans-serif;
+  }
+
+  /*------------ Background Color -----------*/
+.bg-secondary {
+    background: var(--bs-secondary) !important;
+  }
+  
+  .bg-dark {
+    background: var(--bs-dark) !important;
+  }
+  
+  .bg-light {
+    background: var(--bs-light) !important;
+  }
+  
+  .bg-gray-1 {
+    background-color: var(--bs-gray-100) !important;
+  }
+
+/* - Section Title
+--------------------------------------------------------------*/
+  h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font);
+}
+
+/** 2.10 Buttons
+--------------------------------------------------------------*/
+/* - Button Sizes
+------------------------------------------------------------- */
+.btn.btn-small {
+    padding: 0.8em 1.8em;
+    font-size: 0.65em;
+  }
+  
+  .btn.btn-medium {
+    padding: 1.1em 2.8em;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+  }
+  
+  .btn.btn-large {
+    padding: 2.4em 5.1em;
+    font-size: 1.8em;
+  }
+  
+  /* - Button Shapes
+  ------------------------------------------------------------- */
+  .btn.btn-rounded,
+  .btn.btn-rounded::after {
+    border-radius: 6px;
+  }
+  
+  .btn.btn-pill,
+  .btn.btn-pill::after {
+    border-radius: 2em;
+  }
+  
+  /* button outline */
+  .btn.btn-outline-dark,
+  .btn.btn-outline-light,
+  .btn.btn-outline-accent {
+    background: transparent;
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid;
+  }
+  
+  .btn.btn-outline-dark:hover::after,
+  .btn.btn-outline-light:hover::after {
+    background-color: transparent;
+  }
+  
+  .btn.btn-outline-dark {
+    border-color: rgba(0, 0, 0, 1);
+    color: var(--bs-dark);
+  }
+  
+  .btn.btn-outline-dark:hover {
+    background: var(--bs-dark);
+    color: var(--bs-light);
+  }
+  
+  .btn.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: var(--bs-light);
+  }
+  
+  .btn.btn-outline-light:hover {
+    background: var(--bs-primary);
+    color: var(--bs-light);
+    border-color: var(--bs-primary);
+  }
+  
+  .btn.btn-outline-gray {
+    background: transparent;
+    border-color: var(--gray-color-600);
+    color: var(--bs-dark);
+  }
+  
+  .btn.btn-outline-gray:hover {
+    border-color: var(--bs-dark);
+    color: var(--bs-dark) !important;
+  }
+  
+  .btn.btn-outline-accent {
+    background: transparent;
+    border-color: var(--accent-color);
+    color: var(--bs-dark);
+  }
+  
+  .btn.btn-outline-accent:hover {
+    border-color: var(--bs-dark);
+    color: var(--bs-dark) !important;
+  }
+  
+  .btn.btn-full {
+    display: block;
+    margin: .85em 0;
+    width: 100%;
+    letter-spacing: 0.12em;
+  }
+  
+  /* no border radius */
+  .btn-rounded-none,
+  .btn-rounded-none::after {
+    border-radius: 0;
+  }
+  
+  /* - Buttons Color Scheme
+  ------------------------------------------------------------- */
+  .btn.btn-normal {
+    border: none;
+    color: var(--bs-dark);
+    text-decoration: underline;
+  }
+  
+  .btn.btn-normal:hover {
+    text-decoration: none;
+  }
+  
+  .btn.btn-accent {
+    color: var(--bs-light);
+    background-color: var(--accent-color);
+    border: none;
+  }
+  
+  .btn.btn-accent:hover {
+    color: var(--bs-light) !important;
+    background-color: var(--bs-primary);
+  }
+  
+  .btn.btn-black {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    border: none;
+  }
+  
+  .btn.btn-black:hover {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+  }
+  
+  .btn.btn-light {
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+    border: none;
+  }
+  
+  .btn.btn-light:hover {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+  }
+  
+  .btn.btn-primary {
+    background: var(--bs-primary);
+    color: var(--bs-light);
+    border: none;
+  }
+  
+  .btn.btn-primary:hover {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+  }
+
+  /* 13. Blog Page
+/*----------------------------------------------*/
+.pagination .page-link {
+    color: var(--bs-primary);
+    background-color: var(--bs-light);
+    border: 1px solid var(--bs-primary);
+  }
+  
+  .pagination .page-item.active .page-link {
+    color: var(--bs-light);
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  .pagination .page-item a.page-link {
+    height: 40px;
+  }
+  
+  .pagination .page-item a.page-link:hover,
+  .pagination .page-item a.page-link:focus {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+  }

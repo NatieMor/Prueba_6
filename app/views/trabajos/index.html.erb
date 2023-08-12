@@ -6,9 +6,9 @@
   <% @trabajos.each do |trabajo| %>
     <%= render trabajo %>
     <p>
-      <%= link_to "Show this trabajo", trabajo %>
+      <%= link_to "Mostar", trabajo %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New trabajo", new_trabajo_path %>
+<%= link_to "New trabajo", new_trabajo_path, class:"btn btn-primary btn.btn-medium btn.btn-rounded" %>
