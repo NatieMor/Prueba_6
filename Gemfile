@@ -80,3 +80,4 @@ gem "popper_js", "~> 2.11"
 gem "activestorage"
 
 gem "pagy", "~> 6.0"
+gem "devise", "~> 4.9"

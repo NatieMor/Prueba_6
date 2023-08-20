@@ -1579,3 +1579,1970 @@ Processing by UsuariosController#show as HTML
 Completed 200 OK in 29ms (Views: 21.3ms | ActiveRecord: 0.2ms | Allocations: 7262)
 
 
+Started GET "/" for 127.0.0.1 at 2023-08-19 16:03:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (12.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.5ms | Allocations: 262)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 66.9ms | Allocations: 6499)
+  Rendered shared/_navbar.html (Duration: 1.5ms | Allocations: 94)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 822.9ms | Allocations: 62804)
+Completed 200 OK in 901ms (Views: 815.3ms | ActiveRecord: 17.9ms | Allocations: 70546)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 16:04:42 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (8.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 2.2ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 34.2ms | Allocations: 1771)
+  Rendered shared/_navbar.html (Duration: 1.1ms | Allocations: 86)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 85.0ms | Allocations: 8410)
+Completed 200 OK in 99ms (Views: 82.5ms | ActiveRecord: 8.4ms | Allocations: 9414)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 16:06:21 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.6ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 2.3ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1762)
+  Rendered shared/_navbar.html (Duration: 1.1ms | Allocations: 86)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 8401)
+Completed 200 OK in 68ms (Views: 61.2ms | ActiveRecord: 0.6ms | Allocations: 9374)
+
+
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1195628996130642780)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20230819202257)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (57.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230819202257"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1195628996130642780)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-08-19 16:32:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.6ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.9ms | Allocations: 262)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 71.6ms | Allocations: 6645)
+  Rendered shared/_navbar.html (Duration: 1.3ms | Allocations: 94)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 550.1ms | Allocations: 62493)
+Completed 200 OK in 680ms (Views: 557.0ms | ActiveRecord: 5.7ms | Allocations: 71078)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 16:32:58 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (2.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 1.2ms | Allocations: 239)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 5603)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 11747)
+Completed 200 OK in 62ms (Views: 39.6ms | ActiveRecord: 5.9ms | Allocations: 14712)
+
+
+Started GET "/usuarios/1" for 127.0.0.1 at 2023-08-19 16:33:14 -0400
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.1ms | Allocations: 6673)
+
+
+  
+NoMethodError (undefined method `id' for Trabajo:Class
+Did you mean?  ids):
+  
+app/controllers/usuarios_controller.rb:11:in `show'
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 16:33:17 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1240)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 13)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 7387)
+Completed 200 OK in 67ms (Views: 58.7ms | ActiveRecord: 1.3ms | Allocations: 7708)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 16:33:21 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.3ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1058)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 6982)
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 0.3ms | Allocations: 7269)
+
+
+Started GET "/as" for 127.0.0.1 at 2023-08-19 16:34:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/as"):
+  
+Started GET "/users/" for 127.0.0.1 at 2023-08-19 16:34:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/sing_in" for 127.0.0.1 at 2023-08-19 16:34:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sing_in"):
+  
+Started GET "/user/sing_in" for 127.0.0.1 at 2023-08-19 16:35:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/sing_in"):
+  
+Started GET "/" for 127.0.0.1 at 2023-08-19 16:35:57 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1140)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 13)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 7282)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 0.2ms | Allocations: 7595)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-19 16:36:16 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 731)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 69.1ms | Allocations: 4396)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 109.4ms | Allocations: 10505)
+Completed 200 OK in 149ms (Views: 117.4ms | ActiveRecord: 5.2ms | Allocations: 16818)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-19 16:50:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 744)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.1ms | Allocations: 4436)
+  Rendered shared/_navbar.html (Duration: 1.3ms | Allocations: 93)
+  Rendered shared/_footer.html.erb (Duration: 8.6ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 518.0ms | Allocations: 60292)
+Completed 200 OK in 583ms (Views: 553.0ms | ActiveRecord: 2.3ms | Allocations: 71754)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-08-19 16:50:36 -0400
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"n@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "n@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 22ms (ActiveRecord: 1.1ms | Allocations: 3746)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"n@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1331)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 13)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 7369)
+Completed 200 OK in 296ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 9178)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2023-08-19 16:50:51 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 219)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 203)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1650)
+  Rendered shared/_navbar.html (Duration: 0.2ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 7772)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 8999)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-08-19 16:51:14 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 99)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1874)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 7999)
+Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 9258)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-08-19 16:51:19 -0400
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 892)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3157)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 13)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 9204)
+Completed 422 Unprocessable Entity in 39ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 12090)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-08-19 16:51:47 -0400
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"n@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "n@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.1ms | Allocations: 451)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 17.4ms | Allocations: 2132)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 82.6ms | Allocations: 8088)
+Completed 422 Unprocessable Entity in 297ms (Views: 85.4ms | ActiveRecord: 0.7ms | Allocations: 13362)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-08-19 16:52:02 -0400
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"n@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "n@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "n@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-08-19 20:52:02.639851"], ["updated_at", "2023-08-19 20:52:02.639851"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 235ms (ActiveRecord: 6.4ms | Allocations: 7039)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 16:52:02 -0400
+Processing by TrabajosController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (1.5ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.5ms | Allocations: 242)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 5058)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 11212)
+Completed 200 OK in 55ms (Views: 33.9ms | ActiveRecord: 3.3ms | Allocations: 14932)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 16:52:15 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 2.2ms | Allocations: 239)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 29.7ms | Allocations: 5556)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 11710)
+Completed 200 OK in 76ms (Views: 52.8ms | ActiveRecord: 5.0ms | Allocations: 14659)
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2023-08-19 16:53:05 -0400
+Processing by UsuariosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/new.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.8ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/usuarios/_form.html.erb:42
+  Rendered usuarios/_form.html.erb (Duration: 8.2ms | Allocations: 3073)
+  Rendered usuarios/new.html.erb within layouts/application (Duration: 19.9ms | Allocations: 3401)
+  Rendered shared/_navbar.html (Duration: 1.5ms | Allocations: 86)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 61.0ms | Allocations: 10025)
+Completed 200 OK in 72ms (Views: 64.3ms | ActiveRecord: 0.8ms | Allocations: 11019)
+
+
+Started GET "/users/sing_up" for 127.0.0.1 at 2023-08-19 16:54:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sing_up"):
+  
+Started GET "/users/" for 127.0.0.1 at 2023-08-19 16:54:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/sing_up" for 127.0.0.1 at 2023-08-19 16:54:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sing_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-08-19 16:54:50 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1771)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 16:54:50 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 3.7ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1801)
+  Rendered shared/_navbar.html (Duration: 2.2ms | Allocations: 87)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 8544)
+Completed 200 OK in 64ms (Views: 58.2ms | ActiveRecord: 0.2ms | Allocations: 9474)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 16:55:05 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.3ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1054)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 6976)
+Completed 200 OK in 47ms (Views: 41.3ms | ActiveRecord: 0.4ms | Allocations: 7275)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 16:55:06 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 1.7ms | Allocations: 221)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1825)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 7954)
+Completed 200 OK in 43ms (Views: 36.9ms | ActiveRecord: 0.2ms | Allocations: 8648)
+
+
+Started GET "/usuarios/2" for 127.0.0.1 at 2023-08-19 16:55:09 -0400
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms | Allocations: 5395)
+
+
+  
+NoMethodError (undefined method `id' for Trabajo:Class
+Did you mean?  ids):
+  
+app/controllers/usuarios_controller.rb:11:in `show'
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:00:35 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (2.3ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.6ms | Allocations: 20)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 76.9ms | Allocations: 3929)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 138.7ms | Allocations: 9955)
+Completed 200 OK in 163ms (Views: 122.0ms | ActiveRecord: 24.7ms | Allocations: 10245)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:23:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.5ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.9ms | Allocations: 262)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 37.9ms | Allocations: 6694)
+  Rendered shared/_navbar.html (Duration: 1.0ms | Allocations: 93)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 500.5ms | Allocations: 62739)
+Completed 200 OK in 569ms (Views: 508.5ms | ActiveRecord: 5.6ms | Allocations: 70480)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:23:33 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 1.7ms | Allocations: 239)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 25.2ms | Allocations: 5555)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 11699)
+Completed 200 OK in 61ms (Views: 45.7ms | ActiveRecord: 2.8ms | Allocations: 14649)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:23:34 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1076)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 7000)
+Completed 200 OK in 32ms (Views: 27.9ms | ActiveRecord: 0.4ms | Allocations: 7304)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:23:35 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1064)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 6988)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.2ms | Allocations: 7274)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:23:39 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.3ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1088)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 7038)
+Completed 200 OK in 57ms (Views: 50.2ms | ActiveRecord: 0.6ms | Allocations: 7321)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:23:40 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.6ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1048)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 48.8ms | Allocations: 6970)
+Completed 200 OK in 55ms (Views: 49.9ms | ActiveRecord: 0.6ms | Allocations: 7246)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:23:43 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.5ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.3ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1048)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 7074)
+Completed 200 OK in 42ms (Views: 34.5ms | ActiveRecord: 0.5ms | Allocations: 7352)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:23:46 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1048)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 6970)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 0.2ms | Allocations: 7246)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:23:54 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1078)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 7000)
+Completed 200 OK in 44ms (Views: 39.9ms | ActiveRecord: 0.2ms | Allocations: 7274)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:24:03 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.5ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1057)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 7079)
+Completed 200 OK in 35ms (Views: 29.2ms | ActiveRecord: 0.5ms | Allocations: 7356)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:24:40 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.7ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.6ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 1755)
+  Rendered shared/_navbar.html (Duration: 1.4ms | Allocations: 87)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 8415)
+Completed 200 OK in 64ms (Views: 57.3ms | ActiveRecord: 0.7ms | Allocations: 9381)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:24:53 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 1.8ms | Allocations: 221)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1822)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 7958)
+Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 0.3ms | Allocations: 8670)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:24:55 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1076)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 7024)
+Completed 200 OK in 31ms (Views: 25.7ms | ActiveRecord: 0.4ms | Allocations: 7323)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:24:56 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 0.3ms | Allocations: 23)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1068)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 6990)
+Completed 200 OK in 37ms (Views: 29.3ms | ActiveRecord: 0.4ms | Allocations: 7268)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:26:13 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 1.4ms | Allocations: 221)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1804)
+  Rendered shared/_navbar.html (Duration: 0.9ms | Allocations: 87)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 57.3ms | Allocations: 8443)
+Completed 200 OK in 67ms (Views: 61.0ms | ActiveRecord: 0.3ms | Allocations: 9404)
+
+
+Started GET "/usuarios/1" for 127.0.0.1 at 2023-08-19 20:26:20 -0400
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.0ms | Allocations: 8470)
+
+
+  
+NoMethodError (undefined method `id' for Trabajo:Class
+Did you mean?  ids):
+  
+app/controllers/usuarios_controller.rb:11:in `show'
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:26:28 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.2ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1217)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 13)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 7361)
+Completed 200 OK in 33ms (Views: 27.3ms | ActiveRecord: 0.6ms | Allocations: 7677)
+
+
+Started GET "/usuarios/2" for 127.0.0.1 at 2023-08-19 20:26:33 -0400
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.0ms | Allocations: 4700)
+
+
+  
+NoMethodError (undefined method `id' for Trabajo:Class
+Did you mean?  ids):
+  
+app/controllers/usuarios_controller.rb:11:in `show'
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:26:52 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 0.2ms | Allocations: 23)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1077)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 7103)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 0.6ms | Allocations: 7379)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:27:11 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (3.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 1.8ms | Allocations: 221)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 30.8ms | Allocations: 1810)
+  Rendered shared/_navbar.html (Duration: 3.3ms | Allocations: 87)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 80.0ms | Allocations: 8449)
+Completed 200 OK in 89ms (Views: 81.5ms | ActiveRecord: 3.3ms | Allocations: 9401)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 20:27:13 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1062)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 6997)
+Completed 200 OK in 45ms (Views: 35.5ms | ActiveRecord: 1.1ms | Allocations: 7296)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:27:16 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.1ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1813)
+  Rendered shared/_navbar.html (Duration: 0.1ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 7942)
+Completed 200 OK in 40ms (Views: 33.8ms | ActiveRecord: 0.2ms | Allocations: 8634)
+
+
+Started GET "/trabajos/2" for 127.0.0.1 at 2023-08-19 20:27:17 -0400
+Processing by TrabajosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrabajo Load (1.8ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos" WHERE "trabajos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trabajos_controller.rb:63:in `set_trabajo'
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/show.html.erb within layouts/application
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered trabajos/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 816)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 6730)
+Completed 200 OK in 39ms (Views: 28.5ms | ActiveRecord: 1.8ms | Allocations: 8258)
+
+
+Started GET "/trabajos/usuarios" for 127.0.0.1 at 2023-08-19 20:27:19 -0400
+Processing by TrabajosController#show as HTML
+  Parameters: {"id"=>"usuarios"}
+  [1m[36mTrabajo Load (0.6ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos" WHERE "trabajos"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trabajos_controller.rb:63:in `set_trabajo'
+Completed 404 Not Found in 10ms (ActiveRecord: 0.6ms | Allocations: 986)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trabajo with 'id'=usuarios):
+  
+app/controllers/trabajos_controller.rb:63:in `set_trabajo'
+Started GET "/trabajos/usuarios" for 127.0.0.1 at 2023-08-19 20:52:31 -0400
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:52:31 -0400
+Processing by TrabajosController#index as HTML
+Processing by TrabajosController#show as HTML
+  Parameters: {"id"=>"usuarios"}
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos" WHERE "trabajos"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trabajos_controller.rb:63:in `set_trabajo'
+Completed 404 Not Found in 37ms (ActiveRecord: 11.6ms | Allocations: 9296)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trabajo with 'id'=usuarios):
+  
+app/controllers/trabajos_controller.rb:63:in `set_trabajo'
+  [1m[36mTrabajo Load (0.5ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 3.3ms | Allocations: 3166)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.7ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 160.8ms | Allocations: 127437)
+  Rendered shared/_navbar.html (Duration: 0.9ms | Allocations: 87)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 263.7ms | Allocations: 167755)
+Completed 200 OK in 288ms (Views: 251.1ms | ActiveRecord: 20.6ms | Allocations: 172419)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:52:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.7ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.1ms | Allocations: 262)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 32.3ms | Allocations: 6688)
+  Rendered shared/_navbar.html (Duration: 1.4ms | Allocations: 94)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 470.7ms | Allocations: 62595)
+Completed 200 OK in 556ms (Views: 474.1ms | ActiveRecord: 4.9ms | Allocations: 70333)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:52:55 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1251)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 13)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 7301)
+Completed 200 OK in 36ms (Views: 29.9ms | ActiveRecord: 0.4ms | Allocations: 7643)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:53:23 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 2.8ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1788)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 49.0ms | Allocations: 16008)
+  Rendered layout layouts/application.html.erb (Duration: 87.9ms | Allocations: 24142)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 3.3ms | Allocations: 25131)
+
+
+  
+ActionView::Template::Error (undefined method `role' for #<User id: 1, email: "n@gmail.com", created_at: "2023-08-19 20:52:02.639851000 +0000", updated_at: "2023-08-19 20:52:02.639851000 +0000">):
+    21:                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+    22:                         aria-expanded="false">
+    23:                         <% if user_signed_in? %>
+    24:                             <!--<%= current_user.role%> <%= current_user.email%>-->
+    25:                             <%else%>
+    26:                                 Opciones
+    27:                                 <%end%>
+  
+app/views/shared/_navbar.html.erb:24
+app/views/layouts/application.html.erb:16
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:53:54 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.4ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1788)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 5.6ms | Allocations: 1491)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 9852)
+Completed 200 OK in 59ms (Views: 52.2ms | ActiveRecord: 1.2ms | Allocations: 10839)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:54:06 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1072)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 6.3ms | Allocations: 1098)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 8080)
+Completed 200 OK in 71ms (Views: 56.5ms | ActiveRecord: 0.5ms | Allocations: 8373)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:54:08 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.8ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1081)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 7.0ms | Allocations: 1099)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 8090)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 1.8ms | Allocations: 8366)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 20:54:11 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.3ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1116)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 4.0ms | Allocations: 1099)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 8127)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 0.6ms | Allocations: 8410)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 20:55:48 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.3ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 3.9ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 1768)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 11.9ms | Allocations: 1488)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 69.6ms | Allocations: 9808)
+Completed 200 OK in 84ms (Views: 77.5ms | ActiveRecord: 0.7ms | Allocations: 10768)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-08-19 20:56:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sing_out" for 127.0.0.1 at 2023-08-19 20:56:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sing_out"):
+  
+Started GET "/users/" for 127.0.0.1 at 2023-08-19 20:56:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/" for 127.0.0.1 at 2023-08-19 20:59:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:59:08 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.3ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 3.3ms | Allocations: 251)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 29.5ms | Allocations: 6263)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 22.8ms | Allocations: 7884)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 516.5ms | Allocations: 70163)
+Completed 200 OK in 580ms (Views: 511.8ms | ActiveRecord: 8.9ms | Allocations: 75852)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-19 20:59:25 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 22ms (ActiveRecord: 0.3ms | Allocations: 2183)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 20:59:25 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.7ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1121)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 10.8ms | Allocations: 1106)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 92.3ms | Allocations: 8255)
+Completed 200 OK in 98ms (Views: 91.8ms | ActiveRecord: 1.6ms | Allocations: 8576)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-08-19 21:00:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-08-19 21:00:25 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 1916)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:00:25 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.5ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 1125)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 6.0ms | Allocations: 1106)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 8277)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.7ms | Allocations: 8597)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:00:33 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1081)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 4.6ms | Allocations: 1102)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 8093)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 1.2ms | Allocations: 8369)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2023-08-19 21:07:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-19 21:07:41 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 41ms (ActiveRecord: 15.4ms | Allocations: 4398)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:07:41 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.6ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 2.1ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 1797)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 7.8ms | Allocations: 1486)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 63.7ms | Allocations: 9939)
+Completed 200 OK in 76ms (Views: 66.7ms | ActiveRecord: 1.3ms | Allocations: 10852)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 21:07:50 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 2.8ms | Allocations: 239)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 25.4ms | Allocations: 5691)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:23
+  Rendered shared/_navbar.html.erb (Duration: 3.3ms | Allocations: 1214)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 13052)
+Completed 200 OK in 59ms (Views: 45.9ms | ActiveRecord: 4.8ms | Allocations: 16016)
+
+
+Started GET "/usuarios/1" for 127.0.0.1 at 2023-08-19 21:07:52 -0400
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms | Allocations: 5350)
+
+
+  
+NoMethodError (undefined method `id' for Trabajo:Class
+Did you mean?  ids):
+  
+app/controllers/usuarios_controller.rb:11:in `show'
+Started GET "/usuarios/1" for 127.0.0.1 at 2023-08-19 21:14:36 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 4.5ms | Allocations: 18065)
+
+
+  
+NoMethodError (undefined method `id' for Trabajo:Class
+Did you mean?  ids):
+  
+app/controllers/usuarios_controller.rb:11:in `show'
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:14:41 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (1.6ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 2.8ms | Allocations: 251)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 33.4ms | Allocations: 5062)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 20.3ms | Allocations: 6106)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 569.9ms | Allocations: 67279)
+Completed 200 OK in 591ms (Views: 573.3ms | ActiveRecord: 9.4ms | Allocations: 68697)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:14:45 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1112)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 3.5ms | Allocations: 1103)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 8131)
+Completed 200 OK in 33ms (Views: 27.1ms | ActiveRecord: 1.0ms | Allocations: 8447)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:14:51 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.5ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1091)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 3.8ms | Allocations: 1103)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 8106)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.8ms | Allocations: 8389)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:15:48 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.5ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.6ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 1762)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 6.5ms | Allocations: 1491)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 65.1ms | Allocations: 9805)
+Completed 200 OK in 77ms (Views: 69.5ms | ActiveRecord: 1.0ms | Allocations: 10769)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:20:38 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.9ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.9ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1776)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 8.0ms | Allocations: 1492)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 54.1ms | Allocations: 9821)
+Completed 200 OK in 69ms (Views: 58.8ms | ActiveRecord: 1.7ms | Allocations: 10813)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 21:20:41 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1051)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 3.9ms | Allocations: 1102)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 8064)
+Completed 200 OK in 38ms (Views: 31.9ms | ActiveRecord: 0.6ms | Allocations: 8359)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:20:45 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.3ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 1081)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 3.2ms | Allocations: 1102)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 8093)
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 0.5ms | Allocations: 8383)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 21:20:49 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.3ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1060)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 4.6ms | Allocations: 1102)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 8072)
+Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 0.5ms | Allocations: 8348)
+
+
+Started GET "/trabajos/new" for 127.0.0.1 at 2023-08-19 21:20:54 -0400
+Processing by TrabajosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/new.html.erb within layouts/application
+  Rendered trabajos/_form.html.erb (Duration: 19.4ms | Allocations: 4705)
+  Rendered trabajos/new.html.erb within layouts/application (Duration: 26.1ms | Allocations: 5007)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 5.5ms | Allocations: 1269)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 61.8ms | Allocations: 12319)
+Completed 200 OK in 78ms (Views: 65.4ms | ActiveRecord: 0.1ms | Allocations: 12701)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 21:20:59 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.2ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1064)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:29
+  Rendered shared/_navbar.html.erb (Duration: 3.1ms | Allocations: 1102)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 8084)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.4ms | Allocations: 8393)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 21:21:37 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.3ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 3.6ms | Allocations: 179)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 1768)
+  Rendered shared/_navbar.html (Duration: 3.7ms | Allocations: 92)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 62.2ms | Allocations: 8416)
+Completed 200 OK in 98ms (Views: 70.3ms | ActiveRecord: 0.3ms | Allocations: 9399)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 21:21:40 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1066)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 6998)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 0.4ms | Allocations: 7295)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 21:21:44 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1072)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 7001)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.4ms | Allocations: 7277)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 21:21:46 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 1.2ms | Allocations: 239)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 1954)
+  Rendered shared/_navbar.html (Duration: 0.0ms | Allocations: 14)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | Allocations: 8099)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 0.3ms | Allocations: 8851)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 21:22:12 -0400
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 1.5ms | Allocations: 222)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 1793)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:21
+  Rendered shared/_navbar.html.erb (Duration: 5.6ms | Allocations: 1488)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 9840)
+Completed 200 OK in 67ms (Views: 61.0ms | ActiveRecord: 1.1ms | Allocations: 10825)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2023-08-19 21:29:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsuariosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:6
+  Rendered usuarios/_usuario.html.erb (Duration: 1.9ms | Allocations: 305)
+  Rendered usuarios/_usuario.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 37.0ms | Allocations: 7576)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:21
+  Rendered shared/_navbar.html.erb (Duration: 21.6ms | Allocations: 7907)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 475.3ms | Allocations: 71632)
+Completed 200 OK in 540ms (Views: 474.7ms | ActiveRecord: 8.6ms | Allocations: 79382)
+
+
+Started GET "/inicio/index" for 127.0.0.1 at 2023-08-19 21:29:34 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 123)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:21
+  Rendered shared/_navbar.html.erb (Duration: 6.1ms | Allocations: 1359)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 7867)
+Completed 200 OK in 35ms (Views: 29.8ms | ActiveRecord: 0.4ms | Allocations: 8711)
+
+
+Started GET "/inicio/trabajos" for 127.0.0.1 at 2023-08-19 21:29:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/inicio/trabajos"):
+  
+Started GET "/inicio/index" for 127.0.0.1 at 2023-08-19 21:29:41 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:21
+  Rendered shared/_navbar.html.erb (Duration: 8.5ms | Allocations: 1289)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 7668)
+Completed 200 OK in 50ms (Views: 38.7ms | ActiveRecord: 0.4ms | Allocations: 7970)
+
+
+Started GET "/inicio/trabajos" for 127.0.0.1 at 2023-08-19 21:29:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/inicio/trabajos"):
+  
+Started GET "/inicio/trabajos" for 127.0.0.1 at 2023-08-19 21:30:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/inicio/trabajos"):
+  
+Started GET "/inicio/trabajos" for 127.0.0.1 at 2023-08-19 21:31:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/inicio/trabajos"):
+  
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:31:06 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 1.7ms | Allocations: 221)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 4834)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:21
+  Rendered shared/_navbar.html.erb (Duration: 9.4ms | Allocations: 3753)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 123.9ms | Allocations: 32795)
+Completed 200 OK in 138ms (Views: 122.5ms | ActiveRecord: 4.2ms | Allocations: 35765)
+
+
+Started GET "/trabajos" for 127.0.0.1 at 2023-08-19 21:31:09 -0400
+Processing by TrabajosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trabajos/index.html.erb within layouts/application
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos"[0m
+  ↳ app/views/trabajos/index.html.erb:6
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered trabajos/_trabajo.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered trabajos/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1145)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:21
+  Rendered shared/_navbar.html.erb (Duration: 3.3ms | Allocations: 1102)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 8158)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 1.1ms | Allocations: 8471)
+
+
+Started GET "/inicio/index" for 127.0.0.1 at 2023-08-19 21:31:11 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:21
+  Rendered shared/_navbar.html.erb (Duration: 3.8ms | Allocations: 1344)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 7757)
+Completed 200 OK in 25ms (Views: 20.4ms | ActiveRecord: 0.4ms | Allocations: 8388)
+
+
+Started GET "/inicio/trabajos" for 127.0.0.1 at 2023-08-19 21:31:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/inicio/trabajos"):
+  
+Started GET "/inicio/index" for 127.0.0.1 at 2023-08-19 21:31:17 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:21
+  Rendered shared/_navbar.html.erb (Duration: 6.2ms | Allocations: 1130)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 7330)
+Completed 200 OK in 40ms (Views: 31.8ms | ActiveRecord: 2.1ms | Allocations: 7611)
+
+
+Started GET "/inicio/trabajos" for 127.0.0.1 at 2023-08-19 21:31:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/inicio/trabajos"):
+  
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:48:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 334)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (Duration: 21.6ms | Allocations: 9819)
+  Rendered shared/_footer.html.erb (Duration: 2.7ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 492.7ms | Allocations: 66560)
+Completed 200 OK in 539ms (Views: 495.3ms | ActiveRecord: 5.2ms | Allocations: 70997)
+
+
+Started GET "/usuarios/index" for 127.0.0.1 at 2023-08-19 21:49:01 -0400
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Completed 404 Not Found in 28ms (ActiveRecord: 3.6ms | Allocations: 5167)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Usuario with 'id'=index):
+  
+app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:49:11 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (Duration: 8.3ms | Allocations: 1288)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 7683)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 0.6ms | Allocations: 7985)
+
+
+Started GET "/trabajos/index" for 127.0.0.1 at 2023-08-19 21:49:16 -0400
+Processing by TrabajosController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mTrabajo Load (0.3ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos" WHERE "trabajos"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trabajos_controller.rb:63:in `set_trabajo'
+Completed 404 Not Found in 21ms (ActiveRecord: 3.2ms | Allocations: 4273)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trabajo with 'id'=index):
+  
+app/controllers/trabajos_controller.rb:63:in `set_trabajo'
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:49:20 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (Duration: 7.6ms | Allocations: 1181)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 7480)
+Completed 200 OK in 55ms (Views: 47.9ms | ActiveRecord: 0.9ms | Allocations: 7778)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:49:24 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 7)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (Duration: 4.4ms | Allocations: 1118)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 7210)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.2ms | Allocations: 7474)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:49:25 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (Duration: 4.9ms | Allocations: 1118)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 7216)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.6ms | Allocations: 7480)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 21:51:54 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 123)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (Duration: 11.6ms | Allocations: 1618)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 8558)
+Completed 200 OK in 50ms (Views: 44.0ms | ActiveRecord: 1.3ms | Allocations: 9479)
+
+
+Started GET "/usuarios/index" for 127.0.0.1 at 2023-08-19 21:51:56 -0400
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.3ms | Allocations: 989)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Usuario with 'id'=index):
+  
+app/controllers/usuarios_controller.rb:65:in `set_usuario'
+Started GET "/" for 127.0.0.1 at 2023-08-19 22:03:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 334)
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 804)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 479.1ms | Allocations: 57622)
+Completed 200 OK in 536ms (Views: 490.2ms | ActiveRecord: 0.0ms | Allocations: 62497)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 22:03:12 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 237)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 6432)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 6754)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 22:03:14 -0400
+Processing by InicioController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 205)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 6288)
+Completed 200 OK in 43ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 6555)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-19 22:03:39 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.5ms | Allocations: 733)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 49.9ms | Allocations: 4113)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 205)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 83.6ms | Allocations: 10422)
+Completed 200 OK in 128ms (Views: 91.4ms | ActiveRecord: 2.2ms | Allocations: 18101)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-08-19 22:03:55 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1669)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1768)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 3034)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>Inscribirse</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contraseña %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :confirma la contraseña%><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Inscribirme" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+):
+1:    <h2>Inscribirse</h2>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:      <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:      <div class="field">
+7:        <%= f.label :email %><br />
+8:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+9:      </div>
+10:    
+11:      <div class="field">
+12:        <%= f.label :contraseña %>
+13:        <% if @minimum_password_length %>
+14:        <em>(<%= @minimum_password_length %> characters minimum)</em>
+15:        <% end %><br />
+16:        <%= f.password_field :password, autocomplete: "new-password" %>
+17:      </div>
+18:    
+19:      <div class="field">
+20:        <%= f.label :confirma la contraseña%><br />
+21:        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+22:      </div>
+23:    
+24:      <div class="actions">
+25:        <%= f.submit "Inscribirme" %>
+26:      </div>
+27:    <% end %>
+28:    
+29:    <%= render "devise/shared/links" %>
+  
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-19 22:04:10 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1316)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 177)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 7606)
+Completed 200 OK in 54ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 8348)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-08-19 22:04:18 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1360)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1440)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 1959)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>Inscribirse</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contraseña %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :confirma la contraseña%><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Inscribirme" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+):
+1:    <h2>Inscribirse</h2>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:      <%= render "devise/shared/error_messages", resource: resource %>
+5:    
+6:      <div class="field">
+7:        <%= f.label :email %><br />
+8:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+9:      </div>
+10:    
+11:      <div class="field">
+12:        <%= f.label :contraseña %>
+13:        <% if @minimum_password_length %>
+14:        <em>(<%= @minimum_password_length %> characters minimum)</em>
+15:        <% end %><br />
+16:        <%= f.password_field :password, autocomplete: "new-password" %>
+17:      </div>
+18:    
+19:      <div class="field">
+20:        <%= f.label :confirma la contraseña%><br />
+21:        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+22:      </div>
+23:    
+24:      <div class="actions">
+25:        <%= f.submit "Inscribirme" %>
+26:      </div>
+27:    <% end %>
+28:    
+29:    <%= render "devise/shared/links" %>
+  
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected local variable or method, expecting ')'
+Started POST "/__web_console/repl_sessions/977952a4efdea47a12b038152e552491/trace" for 127.0.0.1 at 2023-08-19 22:04:34 -0400
+Started POST "/__web_console/repl_sessions/977952a4efdea47a12b038152e552491/trace" for 127.0.0.1 at 2023-08-19 22:04:55 -0400
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-08-19 22:06:18 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 217)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 551)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2695)
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 560)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 9902)
+Completed 200 OK in 70ms (Views: 60.3ms | ActiveRecord: 0.0ms | Allocations: 11295)
+
+
+Started GET "/users/" for 127.0.0.1 at 2023-08-19 22:06:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2023-08-19 22:06:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-19 22:07:06 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 144)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1747)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 202)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 8146)
+Completed 200 OK in 59ms (Views: 51.5ms | ActiveRecord: 0.0ms | Allocations: 9229)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-08-19 22:07:17 -0400
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"n@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "n@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 219ms (ActiveRecord: 1.9ms | Allocations: 5644)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-19 22:07:18 -0400
+Processing by InicioController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering inicio/index.html.erb within layouts/application
+  Rendered inicio/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 123)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (Duration: 5.8ms | Allocations: 1299)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 7861)
+Completed 200 OK in 53ms (Views: 44.9ms | ActiveRecord: 0.2ms | Allocations: 8585)
+
+
+Started GET "/trabajos/index" for 127.0.0.1 at 2023-08-19 22:07:23 -0400
+Processing by TrabajosController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mTrabajo Load (0.4ms)[0m  [1m[34mSELECT "trabajos".* FROM "trabajos" WHERE "trabajos"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trabajos_controller.rb:63:in `set_trabajo'
+Completed 404 Not Found in 30ms (ActiveRecord: 4.2ms | Allocations: 5000)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trabajo with 'id'=index):
+  
+app/controllers/trabajos_controller.rb:63:in `set_trabajo'
+Started GET "/" for 127.0.0.1 at 2023-08-19 22:26:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by InicioController#index as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 4861)
+
+
+  
+NoMethodError (undefined method `user_signed_out?' for #<InicioController:0x0000000000dbd8>
+
+    if user_signed_out?
+       ^^^^^^^^^^^^^^^^
+Did you mean?  user_signed_in?):
+  
+app/controllers/inicio_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2023-08-19 22:27:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by InicioController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inicio_controller.rb:3:in `index'
+Redirected to 
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 3.6ms | Allocations: 11200)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://localhost:3000inicio/index", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/inicio_controller.rb:4:in `index'
+Started GET "/inicio" for 127.0.0.1 at 2023-08-19 22:28:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-08-19 22:29:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/inicio"):
+  
+Started GET "/inicio/index" for 127.0.0.1 at 2023-08-19 22:29:11 -0400
+Processing by InicioController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inicio_controller.rb:3:in `index'
+Redirected to 
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 3.2ms | Allocations: 11060)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://localhost:3000inicio#index", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/inicio_controller.rb:4:in `index'
+Started GET "/inicio/index" for 127.0.0.1 at 2023-08-19 22:29:38 -0400
+Processing by InicioController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inicio_controller.rb:3:in `index'
+Redirected to 
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.5ms | Allocations: 4683)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://localhost:3000inicio/index", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/inicio_controller.rb:4:in `index'
+Started GET "/inicio/index" for 127.0.0.1 at 2023-08-19 22:30:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by InicioController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inicio_controller.rb:3:in `index'
+Redirected to 
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 3.8ms | Allocations: 11199)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://localhost:3000inicio/index", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/inicio_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2023-08-19 22:30:59 -0400
+Processing by InicioController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/inicio_controller.rb:3:in `index'
+Redirected to 
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.7ms | Allocations: 2039)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://localhost:3000inicio/index", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/inicio_controller.rb:4:in `index'
