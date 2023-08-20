@@ -25,7 +25,7 @@ class TrabajosController < ApplicationController
 
     respond_to do |format|
       if @trabajo.save
-        format.html { redirect_to trabajo_url(@trabajo), notice: "Trabajo was successfully created." }
+        format.html { redirect_to trabajo_url(@trabajo), notice: "se creo exitosamente." }
         format.json { render :show, status: :created, location: @trabajo }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class TrabajosController < ApplicationController
   def update
     respond_to do |format|
       if @trabajo.update(trabajo_params)
-        format.html { redirect_to trabajo_url(@trabajo), notice: "Trabajo was successfully updated." }
+        format.html { redirect_to trabajo_url(@trabajo), notice: "La oferta de trabajo fue actualizada." }
         format.json { render :show, status: :ok, location: @trabajo }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class TrabajosController < ApplicationController
     @trabajo.destroy
 
     respond_to do |format|
-      format.html { redirect_to trabajos_url, notice: "Trabajo was successfully destroyed." }
+      format.html { redirect_to trabajos_url, notice: "oferta de trabajo fue exitosamente eliminado." }
       format.json { head :no_content }
     end
   end
@@ -60,7 +60,7 @@ class TrabajosController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_trabajo
-      @trabajo = Trabajo.find(params[:id])
+      @trabajo =Trabajo.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

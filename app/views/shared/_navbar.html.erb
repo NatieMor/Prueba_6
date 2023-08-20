@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg bg-secondary ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ofertas Laborales</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="usuarios/index">Sesion iniciada</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="trabajos/index">Nuevos Trabajos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="usuarios/index">Usuario</a>
+        </li>
+        <%end%>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            
+          <% if user_signed_in? %>
+              <%= current_user.email%>
+                <%else%>
+                  Opciones
+                  <%end%>
+
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu">
+          <% if user_signed_in? %>
+            <li>
+              <%= button_to 'Cerrar sesión' , destroy_user_session_path, class: 'dropdown-item' , method: :delete %>
+            </li>
+            <%else%>
+            <li>
+              <%= link_to 'Iniciar sesión' , new_user_session_path, class: 'dropdown-item' %>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <%= link_to 'Registro' , new_user_registration_path, class: 'dropdown-item' %>
+            </li>
+            <%end%>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
